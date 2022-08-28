@@ -119,7 +119,18 @@ export const theme: ThemeConfig = [
   }
 ]
 
-export const head: HeadConfig = {}
+export const head: HeadConfig = {
+  custom: ({ dev, post, page }) =>
+    dev
+      ? []
+      : [
+          // IndieAuth
+          '<link rel="authorization_endpoint" href="https://indieauth.com/auth">',
+          '<link rel="token_endpoint" href="https://tokens.indieauth.com/token">',
+          // Micropub
+          '<link rel="micropub" href="https://indiekit.kwaa.dev/micropub">'
+      ]
+}
 
 export const header: HeaderConfig = {
   nav: [
@@ -150,11 +161,12 @@ export const footer: FooterConfig = {
 export const date: DateConfig = {
   locales: 'en-US',
   options: {
-    year: '2-digit',
-    weekday: 'long',
-    month: 'short',
+    year: 'numeric',
+    month: 'long',
     day: 'numeric'
   }
 }
 
-export const feed: FeedConfig = {}
+export const feed: FeedConfig = {
+  hubs: ['https://bridgy-fed.superfeedr.com']
+}
