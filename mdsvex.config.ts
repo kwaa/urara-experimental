@@ -56,12 +56,8 @@ const remarkUraraFm =
       like_of: 'likeOf',
       repost_of: 'repostOf',
       in_reply_to: 'inReplyTo',
-      flags: ({ draft, visibility }) => [
-        ...(draft ? ['draft'] : []),
-        ...(visibility ? [visibility] : []),
-      ],
-    }).forEach(([ output, input ]) => 
-      data.fm = {...data.fm, [output]: input instanceof Object ? input(data.fm) : data.fm![input]}
+    }).forEach(([ output, input ]: string[]) => 
+      data.fm = {...data.fm, [output]: data.fm![input]}
     )
   }
 
