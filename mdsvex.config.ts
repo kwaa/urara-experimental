@@ -48,6 +48,21 @@ const remarkUraraFm =
       if (!data.fm.created) data.fm.created = ctime
       if (!data.fm.updated) data.fm.updated = mtime
     }
+    // Remark FFF Experimental (Hugo -> MDsveX)
+    Object.entries({
+      image: 'images',
+      tags: 'category',
+      bookmark_of: 'bookmarkOf',
+      like_of: 'likeOf',
+      repost_of: 'repostOf',
+      in_reply_to: 'inReplyTo',
+      flags: ({ draft, visibility }) => [
+        ...(draft ? ['draft'] : []),
+        ...(visibility ? [visibility] : []),
+      ],
+    }).forEach(([ output, input ]) => 
+      data.fm = {...data.fm, [output]: input instanceof Object ? input(data.fm) : data.fm![input]}
+    )
   }
 
 // Better type definitions needed
