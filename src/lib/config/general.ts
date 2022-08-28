@@ -126,7 +126,7 @@ export const head: HeadConfig = {
       : [
           // IndieAuth
           '<link rel="authorization_endpoint" href="https://indieauth.com/auth">',
-          '<link rel="token_endpoint" href="https://tokens.indieauth.com/token">',
+          '<link rel="token_endpoint" href="https://indiekit.kwaa.dev/token">',
           // Micropub
           '<link rel="micropub" href="https://indiekit.kwaa.dev/micropub">'
       ],
