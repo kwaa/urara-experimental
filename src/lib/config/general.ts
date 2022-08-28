@@ -129,7 +129,8 @@ export const head: HeadConfig = {
           '<link rel="token_endpoint" href="https://tokens.indieauth.com/token">',
           // Micropub
           '<link rel="micropub" href="https://indiekit.kwaa.dev/micropub">'
-      ]
+      ],
+  me: ['https://gitlab.com/kwaa']
 }
 
 export const header: HeaderConfig = {
