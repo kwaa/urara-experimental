@@ -34,6 +34,7 @@ specifiers:
   rehype-external-links: ^1.0.1
   rehype-slug: ^5.0.1
   remark: ^14.0.2
+  remark-fff: 0.3.0-alpha.0
   remark-footnotes: ~2.0.0
   shiki-twoslash: ^3.1.0
   svelte: ^3.49.0
@@ -51,8 +52,8 @@ specifiers:
 devDependencies:
   '@iconify-json/heroicons-outline': 1.1.2
   '@iconify-json/heroicons-solid': 1.1.2
-  '@sveltejs/adapter-auto': 1.0.0-next.64
-  '@sveltejs/adapter-node': 1.0.0-next.86
+  '@sveltejs/adapter-auto': 1.0.0-next.69
+  '@sveltejs/adapter-node': 1.0.0-next.88
   '@sveltejs/adapter-static': 1.0.0-next.39
   '@sveltejs/kit': 1.0.0-next.405_svelte@3.49.0+vite@3.0.9
   '@tailwindcss/typography': 0.5.4_tailwindcss@3.1.8
@@ -82,6 +83,7 @@ devDependencies:
   rehype-external-links: 1.0.1
   rehype-slug: 5.0.1
   remark: 14.0.2
+  remark-fff: 0.3.0-alpha.0
   remark-footnotes: 2.0.0
   shiki-twoslash: 3.1.0
   svelte: 3.49.0
@@ -1507,27 +1509,27 @@ packages:
       string.prototype.matchall: 4.0.7
     dev: true
 
-  /@sveltejs/adapter-auto/1.0.0-next.64:
-    resolution: {integrity: sha512-Q8DwcS6wl1GovzS9JJzaD/WL/Lfk1ur4nAF1HtmsUvZDpsPBVDqnK2AhYU4G3oFNiuHstrjAogMy5th8ptSFGw==}
+  /@sveltejs/adapter-auto/1.0.0-next.69:
+    resolution: {integrity: sha512-DSrcYgrJ1YFnxJecTiktV4A01B2Avn5t6HvO49YJiGp2mdSxCxJbvqn6I4tPB1T64AInBLFUMmKBK9o9ZJbBMA==}
     dependencies:
-      '@sveltejs/adapter-cloudflare': 1.0.0-next.31
-      '@sveltejs/adapter-netlify': 1.0.0-next.71
-      '@sveltejs/adapter-vercel': 1.0.0-next.66
+      '@sveltejs/adapter-cloudflare': 1.0.0-next.32
+      '@sveltejs/adapter-netlify': 1.0.0-next.75
+      '@sveltejs/adapter-vercel': 1.0.0-next.71
     transitivePeerDependencies:
       - encoding
       - supports-color
     dev: true
 
-  /@sveltejs/adapter-cloudflare/1.0.0-next.31:
-    resolution: {integrity: sha512-HhEFZP72GJ8AZGgFECKIiayDcLaAWi65pI0AnBfiNhCifYSlH/mPNWNVD4AWRDnXnH6XU+FLwhGDnIDwytTyYg==}
+  /@sveltejs/adapter-cloudflare/1.0.0-next.32:
+    resolution: {integrity: sha512-tzkUsdQlBk9xUjcGUOBYos4HKaeaXvz9v4TQ1QS2yIHEtL5xvMEDPZ94/DB2gPL4LZCnYbdY2lsy5HCsoN0hkQ==}
     dependencies:
       '@cloudflare/workers-types': 3.14.1
       esbuild: 0.14.54
       worktop: 0.8.0-next.14
     dev: true
 
-  /@sveltejs/adapter-netlify/1.0.0-next.71:
-    resolution: {integrity: sha512-la1CGtWO1xul1L3zEoFAoc4EX2uxZjrZcOMS3tkKB8drxhbQsNbnTE6fmSSMFiZXhxaikczrBgQwqIaDkLTmZg==}
+  /@sveltejs/adapter-netlify/1.0.0-next.75:
+    resolution: {integrity: sha512-1zTR/U/ceEAyqIGJ74v54G+JbIR+fSmTN9qfqGOM0gBwVoBVRUujGm4tDFJQNYzvuGzVnC7br/rhYMLZd2JluQ==}
     dependencies:
       '@iarna/toml': 2.2.5
       esbuild: 0.14.54
@@ -1535,18 +1537,20 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/adapter-node/1.0.0-next.86:
-    resolution: {integrity: sha512-VfKcFukVEPoAdm8tVGkFLyDDMZe+9HLFW7X/9Ch/UrSCHo3/HyOfYt/slmh+sjGXYjIBAtTjacrIfcMdYh744g==}
+  /@sveltejs/adapter-node/1.0.0-next.88:
+    resolution: {integrity: sha512-N75E0tbq1+70/8lYUbttj7ry+5PDl7DB29aJqYIQQdnWMkIv0CPnH5ux4fwDuQJuhR7k1lfUbLd96JWwPBHvIg==}
+    dependencies:
+      esbuild: 0.14.54
     dev: true
 
   /@sveltejs/adapter-static/1.0.0-next.39:
     resolution: {integrity: sha512-EeD39H6iEe0UEKnKxLFTZFZpi/FcX5xfbAvsMQ+B09aDZccpQmkJBSIo+4kq1JsQGSjwi/+J3aE9bR67R6CIyQ==}
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.0-next.66:
-    resolution: {integrity: sha512-s3Hcxu9nCG/rR3C3cFbdQGjTa5W4K2kRcc6S5Xefx7itbrw+4v3KpO8ZPB6qM55XDwVxuG7260NMHVI6MUGmSA==}
+  /@sveltejs/adapter-vercel/1.0.0-next.71:
+    resolution: {integrity: sha512-Tj8za7fMXheaiB6hNqv61jr/AmAUm+G8huoY1cIvtSqqBHzGmiZH+GFK1Tq/e8e0XR2Xb/ZpZCQSyrFLU2grIQ==}
     dependencies:
-      '@vercel/nft': 0.21.0
+      '@vercel/nft': 0.22.0
       esbuild: 0.14.54
     transitivePeerDependencies:
       - encoding
@@ -1963,8 +1967,8 @@ packages:
       vite: 3.0.9
     dev: true
 
-  /@vercel/nft/0.21.0:
-    resolution: {integrity: sha512-hFCAETfI5cG8l5iAiLhMC2bReC5K7SIybzrxGorv+eGspIbIFsVw7Vg85GovXm/LxA08pIDrAlrhR6GN36XB/Q==}
+  /@vercel/nft/0.22.0:
+    resolution: {integrity: sha512-hB80/093PPiCefN2gVbqv6J93MH+63Zr7uDCwkiS/U4W07DXkLoftbnkBmZoS0Q84LiTSl9DRVSHU4XYCX+sJA==}
     hasBin: true
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.9
@@ -5051,6 +5055,10 @@ packages:
       hast-util-to-string: 2.0.0
       unified: 10.1.2
       unist-util-visit: 4.1.0
+    dev: true
+
+  /remark-fff/0.3.0-alpha.0:
+    resolution: {integrity: sha512-VOFXlDD5gUhiXHShaK4FghUIu8+Kl8jOgEx4lN7eUpHgSkaIkV6LeUAFNNXbjI8R2tI65vYBBV6sP+1eaMMIFA==}
     dev: true
 
   /remark-footnotes/2.0.0:
