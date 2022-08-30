@@ -100,7 +100,7 @@ export default defineConfig({
     remarkUraraFm,
     remarkUraraSpoiler,
     [remarkFootnotes, { inlineNotes: true }],
-    [remarkFFF, { preset: ['hugo'], target: 'mdsvex' }]
+    [remarkFFF, { presets: ['hugo'], target: 'mdsvex' }]
   ],
   rehypePlugins: [
     rehypeSlug,
