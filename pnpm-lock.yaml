@@ -34,7 +34,7 @@ specifiers:
   rehype-external-links: ^1.0.1
   rehype-slug: ^5.0.1
   remark: ^14.0.2
-  remark-fff: 0.3.0-alpha.0
+  remark-fff: ^0.3.0-alpha.1
   remark-footnotes: ~2.0.0
   shiki-twoslash: ^3.1.0
   svelte: ^3.49.0
@@ -83,7 +83,7 @@ devDependencies:
   rehype-external-links: 1.0.1
   rehype-slug: 5.0.1
   remark: 14.0.2
-  remark-fff: 0.3.0-alpha.0
+  remark-fff: 0.3.0-alpha.1
   remark-footnotes: 2.0.0
   shiki-twoslash: 3.1.0
   svelte: 3.49.0
@@ -5057,8 +5057,8 @@ packages:
       unist-util-visit: 4.1.0
     dev: true
 
-  /remark-fff/0.3.0-alpha.0:
-    resolution: {integrity: sha512-VOFXlDD5gUhiXHShaK4FghUIu8+Kl8jOgEx4lN7eUpHgSkaIkV6LeUAFNNXbjI8R2tI65vYBBV6sP+1eaMMIFA==}
+  /remark-fff/0.3.0-alpha.1:
+    resolution: {integrity: sha512-/L3MWnxSKuqyDysLdmiIrJEA6qpeRcqXKc588AIs7eo6TUw2YCtz/wJQC4l5Rl7ZsKwA4X5XiPqRpHLeC1foWQ==}
     dev: true
 
   /remark-footnotes/2.0.0:
