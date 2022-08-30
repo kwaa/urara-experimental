@@ -96,7 +96,12 @@ export default defineConfig({
       )}\` }`
     }
   },
-  remarkPlugins: [remarkUraraFm, remarkUraraSpoiler, [remarkFootnotes, { inlineNotes: true }], remarkFFF],
+  remarkPlugins: [
+    remarkUraraFm,
+    remarkUraraSpoiler,
+    [remarkFootnotes, { inlineNotes: true }],
+    [remarkFFF, { preset: ['hugo'], target: 'mdsvex' }]
+  ],
   rehypePlugins: [
     rehypeSlug,
     [rehypeAutolinkHeadings, { behavior: 'wrap' }],
